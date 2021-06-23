@@ -1,0 +1,15 @@
+.inputContainer{
+    margin: 0;
+    width: 400px;
+}
+
+.button{
+    width: 100px;
+    background: #f18973;
+}
+
+@media (max-width: 650px) {
+    .inputContainer{
+        width: 300px;
+    }
+}

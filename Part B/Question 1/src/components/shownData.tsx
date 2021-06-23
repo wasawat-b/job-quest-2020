@@ -7,30 +7,15 @@ const ShownData: React.FC = () => {
     useFetchDataQuery(inputItem);
 
   return (
-    <div>
-      <p>Number of jokes fetched : {data.value.length}</p>
+    <div className="container">
+      <h3 className="text-decoration-underline">Lists</h3>
       {data.value.map((item) => (
-        <div key={item.id}>
-          <p>{item.joke}</p>
-        </div>
+        <ul key={item.id}>
+          <li>{item.joke}</li>
+        </ul>
       ))}
     </div>
   );
 };
 
 export default ShownData;
-
-/*
-    <div>
-        <p>Number of jokes fetched : {data.value.length}</p>
-        {data.value.map(item => (
-            <div key={item.id}>
-                <p>{item.joke}</p>
-            </div>
-        ))}
-    </div>
-
-    <div>
-        <p>{Object.values(data.value)[1]}</p>
-    </div>
-*/
