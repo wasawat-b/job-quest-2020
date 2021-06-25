@@ -1,20 +1,21 @@
-const receivedData1 = [-8, 0, 321, 5854, 76];
-const receivedData2 = [4123];
-const receivedData3 = [];
-const secondMax = (array) => {
-  if (array.length > 1) {
-    const max = Math.max(...array);
-    array.splice(array.indexOf(max), 1);
-    const foundSecondMax = Math.max(...array);
-    console.log(foundSecondMax);
-  } else if (array.length === 1) {
-    const foundSecondMax = Math.max(...array);
-    console.log(foundSecondMax);
-  } else if (array.length === 0) {
-    console.log("Error!");
-  }
+var receivedData1 = [-8, 0, 321, 5854, 76];
+var receivedData2 = [4123];
+var receivedData3 = [];
+var secondMax = function (array) {
+    if (array.length > 1) {
+        var max = Math.max.apply(Math, array);
+        array.splice(array.indexOf(max), 1);
+        var foundSecondMax = Math.max.apply(Math, array);
+        console.log(foundSecondMax);
+    }
+    else if (array.length === 1) {
+        var foundSecondMax = Math.max.apply(Math, array);
+        console.log(foundSecondMax);
+    }
+    else if (array.length === 0) {
+        console.log("Error!");
+    }
 };
-
 secondMax(receivedData1);
 secondMax(receivedData2);
 secondMax(receivedData3);

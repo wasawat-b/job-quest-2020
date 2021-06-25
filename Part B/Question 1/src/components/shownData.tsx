@@ -1,5 +1,6 @@
 import { useFetchDataQuery } from "../store/api-slice";
 import { useAppSelector } from "../store/hook";
+import LoadingSpinner from "../UI/LoadingSpinner";
 
 const ShownData: React.FC = () => {
   const inputItem = useAppSelector((state) => state.data.item);

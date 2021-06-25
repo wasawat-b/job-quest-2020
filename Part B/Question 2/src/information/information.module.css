@@ -1,0 +1,6 @@
+.invalid input,
+.invalid select {
+  color: red;
+  border: 1px solid #b40e0e;
+  background-color: #fddddd;
+}
