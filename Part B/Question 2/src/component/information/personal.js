@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { listAction } from "../store/list-slice";
 import { useDispatch } from "react-redux";
-import useValid from "../hook/use-valid";
+import { listAction } from "../../store/list-slice";
+import useValid from "../../hook/use-valid";
 
 import classes from "./information.module.css";
 
@@ -351,7 +351,6 @@ const PersonalForm = (props) => {
               <div className={`${addressClasses}`}>
                 <label>ที่อยู่</label>
                 <textarea
-                  value={address}
                   onChange={addressChange}
                   onBlur={addressBlur}
                   onFocus={addressFocus}
@@ -382,6 +381,7 @@ const PersonalForm = (props) => {
                   onChange={runningNameChange}
                   onBlur={runningNameBlur}
                   onFocus={runningNameFocus}
+                  maxLength="10"
                 />
               </div>
 

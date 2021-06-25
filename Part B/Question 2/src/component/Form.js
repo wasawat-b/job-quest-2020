@@ -1,8 +1,8 @@
-import PersonalForm from "../information/personal";
-import MarathonExperience from "../information/marathon";
-import EmergencyContact from "../information/emergency";
-import HealthDetail from "../information/health";
-import Souvenir from "../information/sourvenir";
+import PersonalForm from "./information/personal";
+import MarathonExperience from "./information/marathon";
+import EmergencyContact from "./information/emergency";
+import HealthDetail from "./information/health";
+import Souvenir from "./information/sourvenir";
 import { useDispatch, useSelector } from "react-redux";
 import { listAction } from "../store/list-slice";
 import { useState } from "react";

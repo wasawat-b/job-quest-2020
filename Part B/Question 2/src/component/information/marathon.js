@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { listAction } from "../store/list-slice";
-import useValid from "../hook/use-valid";
+import { listAction } from "../../store/list-slice";
+import useValid from "../../hook/use-valid";
 
 import classes from "./information.module.css";
 
